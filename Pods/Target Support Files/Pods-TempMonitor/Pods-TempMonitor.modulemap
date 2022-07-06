@@ -1,0 +1,6 @@
+framework module Pods_TempMonitor {
+  umbrella header "Pods-TempMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}

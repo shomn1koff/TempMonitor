@@ -6,7 +6,10 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+//import FirebaseDatabaseSwift
+
 
 class AuthViewController: UIViewController {
     
@@ -19,6 +22,9 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loginTF.text = "alexchillout1703@gmail.com"
+        passwordTF.text = "mirea1967"
+        
         let connectedRef = Database.database().reference(withPath: ".info/connected")
             connectedRef.observe(.value, with: { snapshot in
                 if let connected = snapshot.value as? Bool, connected {
@@ -30,6 +36,8 @@ class AuthViewController: UIViewController {
             })
         
         // Do any additional setup after loading the view.
+        warnLabel.alpha = 0
+
     }
     
    
@@ -38,36 +46,41 @@ class AuthViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    func displayWarningLabel(withText text: String) {
+            warnLabel.text = text
+            
+            UIView.animate(withDuration: 3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { [weak self] in
+                self?.warnLabel.alpha = 1
+            }) { [weak self] complete in
+                self?.warnLabel.alpha = 1
+            }
+        }
+    
     @IBAction func loginTapped(_ sender: UIButton) {
-        // performSegue(withIdentifier: "monitorSegue", sender: nil)
-        // ...
-        // after login is done, maybe put this in the login web service completion block
-        
+    
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         guard let email = loginTF.text, let password = passwordTF.text, email != "", password != "" else {
-            //displayWarningLabel(withText: "Info is incorrect")
-            warnLabel.text = "Info is Incorrect"
+            displayWarningLabel(withText: "Данные введены некорректно")
+            //warnLabel.text = "Info is Incorrect"
             return
         }
         
         Auth.auth().signIn(withEmail: email, password: password, completion: { [weak self] (user, error) in
             if error != nil {
-                self?.warnLabel.text = "Error occurred"
+                self?.displayWarningLabel(withText: "Неверный логин/пароль")
                 return
             }
             
             if user != nil {
                 //self?.performSegue(withIdentifier: "tasksSegue", sender: nil)
-                return
+                print("\(email) connected")
+                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+                //return
             }
-            
-            //self?.displayWarningLabel(withText: "No such user")
-            self?.warnLabel.text = "No such user"
-            
-            let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
         })
+        
         
         
         

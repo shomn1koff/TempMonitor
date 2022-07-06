@@ -12,7 +12,18 @@ private let reuseIdentifier = "Cell"
 let itemsPerRow: CGFloat = 2
 let sectionInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
 
-var computers: [Computer] = [Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 500, pumpSpeed: 300), Computer(warningState: false, temps: (90, 100, 70), fanSpeed: 1000, pumpSpeed: 1000), Computer(warningState: false, temps: (40, 40, 30), fanSpeed: 300, pumpSpeed: 200), Computer(warningState: false, temps: (40, 40, 30), fanSpeed: 300, pumpSpeed: 200), Computer(warningState: false, temps: (40, 40, 30), fanSpeed: 300, pumpSpeed: 200), Computer(warningState: false, temps: (40, 40, 30), fanSpeed: 300, pumpSpeed: 200), Computer(warningState: false, temps: (40, 40, 30), fanSpeed: 300, pumpSpeed: 200), Computer(warningState: false, temps: (40, 40, 30), fanSpeed: 300, pumpSpeed: 200), Computer(warningState: false, temps: (40, 40, 30), fanSpeed: 300, pumpSpeed: 200), Computer(warningState: false, temps: (40, 40, 30), fanSpeed: 300, pumpSpeed: 200)]
+var computers: [Computer] = [
+    Computer(warningState: false, temps: (43, 41, 30), fanSpeed: 200, pumpSpeed: 20),
+    Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 200, pumpSpeed: 20),
+    Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 200, pumpSpeed: 20),
+    Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 200, pumpSpeed: 20),
+    Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 200, pumpSpeed: 20),
+    Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 200, pumpSpeed: 20),
+    Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 200, pumpSpeed: 20),
+    Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 200, pumpSpeed: 20),
+    Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 200, pumpSpeed: 20),
+    Computer(warningState: false, temps: (50, 80, 30), fanSpeed: 200, pumpSpeed: 20),
+]
 
 
 class MonitorCollectionViewController: UICollectionViewController {
@@ -27,14 +38,14 @@ class MonitorCollectionViewController: UICollectionViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DispatchQueue.global().async {
-            for _ in 1...30 {
-                DispatchQueue.main.async {
-                    self.collectionView.reloadData()
-                }
-                testNormal(computer: computers)
-                Thread.sleep( forTimeInterval: 1 )
-            }
-            for _ in 1...30 {
+//            for _ in 1...30 {
+//                DispatchQueue.main.async {
+//                    self.collectionView.reloadData()
+//                }
+//                testNormal(computer: computers)
+//                Thread.sleep( forTimeInterval: 1 )
+//            }
+            for _ in 1...300 {
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
@@ -102,11 +113,6 @@ class MonitorCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDelegate
 
   
-    @IBAction func logoutButtonTapped(_ sender: UIBarButtonItem) {
-        
-    }
-
-    
     
 }
 

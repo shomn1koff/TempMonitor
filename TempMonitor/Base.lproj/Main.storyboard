@@ -204,7 +204,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Una-mv-EDy" customClass="GraphView" customModule="TempMonitor" customModuleProvider="target">
-                                <rect key="frame" x="20" y="140" width="374" height="334"/>
+                                <rect key="frame" x="20" y="106" width="374" height="334"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="Nw1-SQ-FMS"/>
@@ -220,7 +220,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JHY-B0-Ty4">
-                                <rect key="frame" x="18" y="580.5" width="378" height="31"/>
+                                <rect key="frame" x="18" y="522.5" width="378" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="AH6-du-2o6"/>
                                 </constraints>
@@ -228,8 +228,8 @@
                                     <action selector="sliderSpeedValueChanged:" destination="AV0-fP-NtK" eventType="valueChanged" id="eTv-qY-1MV"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скорость вращения вентиляторов и скорость помпы (в процентах)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwi-pg-I3K">
-                                <rect key="frame" x="20" y="524" width="374" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Управляющее воздействие" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwi-pg-I3K">
+                                <rect key="frame" x="20" y="490" width="374" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="4gW-WQ-ReN"/>
                                 </constraints>
@@ -237,14 +237,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 об/мин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hs-xN-63L">
-                                <rect key="frame" x="151.5" y="625.5" width="111" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hs-xN-63L">
+                                <rect key="frame" x="187" y="557.5" width="40" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ogS-Dk-6CL">
-                                <rect key="frame" x="30.5" y="101" width="353" height="32"/>
+                                <rect key="frame" x="30.5" y="67" width="353" height="32"/>
                                 <segments>
                                     <segment title="ЦП"/>
                                     <segment title="ГП"/>
@@ -259,7 +259,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Температура в пределах нормы" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV1-vG-Me0">
-                                <rect key="frame" x="61" y="64" width="292.5" height="24"/>
+                                <rect key="frame" x="61" y="30" width="292.5" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="292.5" id="sQx-hn-GTp"/>
                                 </constraints>
@@ -268,13 +268,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текущая температура: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAf-SA-mxL">
-                                <rect key="frame" x="81.5" y="482" width="251" height="30"/>
+                                <rect key="frame" x="81.5" y="448" width="251" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-FN-tQb">
-                                <rect key="frame" x="100.5" y="662" width="213" height="44"/>
+                                <rect key="frame" x="100.5" y="740" width="213" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="213" id="FbN-53-J1C"/>
                                 </constraints>
@@ -284,30 +284,54 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="thin" pointSize="25"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скорость вентиляторов:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGR-Sl-sRU">
+                                <rect key="frame" x="20" y="586.5" width="374" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="fRB-BR-raC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скорость помпы:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guo-iW-oux">
+                                <rect key="frame" x="20" y="618.5" width="374" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="9mv-hf-5x8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eQV-G7-jPQ"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sAf-SA-mxL" firstAttribute="top" secondItem="Una-mv-EDy" secondAttribute="bottom" constant="8" symbolic="YES" id="409-cb-x4m"/>
-                            <constraint firstItem="7Hs-xN-63L" firstAttribute="top" secondItem="JHY-B0-Ty4" secondAttribute="bottom" constant="15" id="4jU-rG-AHc"/>
+                            <constraint firstItem="7Hs-xN-63L" firstAttribute="top" secondItem="JHY-B0-Ty4" secondAttribute="bottom" constant="5" id="4jU-rG-AHc"/>
                             <constraint firstItem="Vwi-pg-I3K" firstAttribute="top" secondItem="sAf-SA-mxL" secondAttribute="bottom" constant="12" id="6Wv-9P-Bmb"/>
                             <constraint firstItem="ogS-Dk-6CL" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="6wL-xL-ZZ6"/>
                             <constraint firstItem="Una-mv-EDy" firstAttribute="top" secondItem="ogS-Dk-6CL" secondAttribute="bottom" constant="8" symbolic="YES" id="CoD-Ct-ska"/>
+                            <constraint firstItem="NGR-Sl-sRU" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="DC6-Vu-kFi"/>
                             <constraint firstItem="7Hs-xN-63L" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="GMY-4Z-Zs6"/>
                             <constraint firstItem="JHY-B0-Ty4" firstAttribute="top" secondItem="Vwi-pg-I3K" secondAttribute="bottom" constant="8.5" id="GxM-Sc-XpM"/>
                             <constraint firstItem="Vcj-FN-tQb" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="Phj-9K-u7f"/>
+                            <constraint firstItem="NGR-Sl-sRU" firstAttribute="top" secondItem="7Hs-xN-63L" secondAttribute="bottom" constant="5" id="RPk-T6-ilN"/>
                             <constraint firstItem="JHY-B0-Ty4" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="RVM-87-Tp8"/>
                             <constraint firstItem="sAf-SA-mxL" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="S16-Ui-a8T"/>
+                            <constraint firstItem="guo-iW-oux" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="SmO-jM-Xxf"/>
+                            <constraint firstItem="guo-iW-oux" firstAttribute="top" secondItem="NGR-Sl-sRU" secondAttribute="bottom" constant="8" symbolic="YES" id="TJ2-wI-bJ7"/>
+                            <constraint firstItem="eQV-G7-jPQ" firstAttribute="bottom" secondItem="Vcj-FN-tQb" secondAttribute="bottom" constant="24" id="XuE-Bg-m5q"/>
                             <constraint firstItem="Una-mv-EDy" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="YhV-Vm-jb4"/>
-                            <constraint firstItem="wV1-vG-Me0" firstAttribute="top" secondItem="eQV-G7-jPQ" secondAttribute="top" constant="64" id="ZOs-qM-Uac"/>
-                            <constraint firstItem="Vcj-FN-tQb" firstAttribute="top" secondItem="7Hs-xN-63L" secondAttribute="bottom" constant="12.5" id="ibK-A1-xpW"/>
+                            <constraint firstItem="wV1-vG-Me0" firstAttribute="top" secondItem="eQV-G7-jPQ" secondAttribute="top" constant="30" id="ZOs-qM-Uac"/>
                             <constraint firstItem="ogS-Dk-6CL" firstAttribute="top" secondItem="wV1-vG-Me0" secondAttribute="bottom" constant="13" id="isJ-lq-SXc"/>
                             <constraint firstItem="Vwi-pg-I3K" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="nWi-MC-lMA"/>
                             <constraint firstItem="wV1-vG-Me0" firstAttribute="centerX" secondItem="eQV-G7-jPQ" secondAttribute="centerX" id="wDS-0N-VPn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fanSpeedLabel" destination="NGR-Sl-sRU" id="S4q-54-caf"/>
                         <outlet property="graphView" destination="Una-mv-EDy" id="2Y8-D8-Yff"/>
+                        <outlet property="pumpSpeedLabel" destination="guo-iW-oux" id="ifA-dD-XOC"/>
                         <outlet property="slider" destination="JHY-B0-Ty4" id="xXv-zI-mHP"/>
                         <outlet property="speedLabel" destination="7Hs-xN-63L" id="HHL-s2-ZLJ"/>
                         <outlet property="stateLabel" destination="wV1-vG-Me0" id="Itk-8G-C9S"/>

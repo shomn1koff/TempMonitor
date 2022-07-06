@@ -14,6 +14,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var fanSpeedLabel: UILabel!
+    @IBOutlet weak var pumpSpeedLabel: UILabel!
     var computer: Computer?
     
     private let drawer: GraphViewProtocol = GraphView()
@@ -37,6 +39,8 @@ class DetailViewController: UIViewController {
             }
             tempLabel.text = "Текущая температура: \(computer.temps.cpuTemp ?? 0) °C"
         }
+        fanSpeedLabel.text = "Скорость вентиляторов: \(computer?.fanSpeed ?? 0) об/мин"
+        pumpSpeedLabel.text = "Скорость помпы: \(computer?.pumpSpeed ?? 0)%"
     }
     
     

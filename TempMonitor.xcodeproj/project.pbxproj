@@ -7,15 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4424CDDD282EA45C006B79BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4424CDDC282EA45C006B79BE /* GoogleService-Info.plist */; };
-		4424CDE0282EA8D0006B79BE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4424CDDF282EA8D0006B79BE /* FirebaseAnalytics */; };
-		4424CDE2282EA8D0006B79BE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4424CDE1282EA8D0006B79BE /* FirebaseAuth */; };
-		4424CDE4282EA8D0006B79BE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4424CDE3282EA8D0006B79BE /* FirebaseDatabase */; };
-		4424CDE6282EA8D0006B79BE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4424CDE5282EA8D0006B79BE /* FirebaseDatabaseSwift */; };
-		4424CDE8282EA8D0006B79BE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4424CDE7282EA8D0006B79BE /* FirebaseFirestore */; };
-		4424CDEA282EA8D0006B79BE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4424CDE9282EA8D0006B79BE /* FirebaseFirestoreSwift */; };
-		4424CDEC282EA8D0006B79BE /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 4424CDEB282EA8D0006B79BE /* FirebaseFunctions */; };
-		4424CDEE282EA8D0006B79BE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4424CDED282EA8D0006B79BE /* FirebaseStorage */; };
+		2228ECEFF87D3DC11C0B03BB /* Pods_TempMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518426FDCB55CF3781E6A2E0 /* Pods_TempMonitor.framework */; };
+		4424CDF6282EC02F006B79BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4424CDF5282EC02F006B79BE /* GoogleService-Info.plist */; };
 		443556942822A33E00733D20 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443556932822A33E00733D20 /* DetailViewController.swift */; };
 		443556962822A7EF00733D20 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443556952822A7EF00733D20 /* GraphView.swift */; };
 		44C5BF7F2814C9780042F8C5 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C5BF7E2814C9780042F8C5 /* ConnectionViewController.swift */; };
@@ -31,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4424CDDC282EA45C006B79BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4424CDF5282EC02F006B79BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		443556932822A33E00733D20 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		443556952822A7EF00733D20 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		44C5BF7E2814C9780042F8C5 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +39,9 @@
 		44E617572814A07E00FEE365 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		44E617592814BA2100FEE365 /* ComputerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerCell.swift; sourceTree = "<group>"; };
 		44E6175B2814C28600FEE365 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		518426FDCB55CF3781E6A2E0 /* Pods_TempMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EBB59F3C7EAC5DF4F1951E /* Pods-TempMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempMonitor.debug.xcconfig"; path = "Target Support Files/Pods-TempMonitor/Pods-TempMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		95C2BE1FE2AD277A69F0CE60 /* Pods-TempMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempMonitor.release.xcconfig"; path = "Target Support Files/Pods-TempMonitor/Pods-TempMonitor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,25 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4424CDE6282EA8D0006B79BE /* FirebaseDatabaseSwift in Frameworks */,
-				4424CDEC282EA8D0006B79BE /* FirebaseFunctions in Frameworks */,
-				4424CDE4282EA8D0006B79BE /* FirebaseDatabase in Frameworks */,
-				4424CDE0282EA8D0006B79BE /* FirebaseAnalytics in Frameworks */,
-				4424CDE8282EA8D0006B79BE /* FirebaseFirestore in Frameworks */,
-				4424CDEE282EA8D0006B79BE /* FirebaseStorage in Frameworks */,
-				4424CDE2282EA8D0006B79BE /* FirebaseAuth in Frameworks */,
-				4424CDEA282EA8D0006B79BE /* FirebaseFirestoreSwift in Frameworks */,
+				2228ECEFF87D3DC11C0B03BB /* Pods_TempMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01C93B2345D5FC431DB93A77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75EBB59F3C7EAC5DF4F1951E /* Pods-TempMonitor.debug.xcconfig */,
+				95C2BE1FE2AD277A69F0CE60 /* Pods-TempMonitor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		44E617352814931800FEE365 = {
 			isa = PBXGroup;
 			children = (
 				44E617402814931800FEE365 /* TempMonitor */,
 				44E6173F2814931800FEE365 /* Products */,
+				01C93B2345D5FC431DB93A77 /* Pods */,
+				B8E73D27AEFBAB7B3C4EC85D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +99,17 @@
 				44E6174A2814931900FEE365 /* Assets.xcassets */,
 				44E6174C2814931900FEE365 /* LaunchScreen.storyboard */,
 				44E6174F2814931900FEE365 /* Info.plist */,
-				4424CDDC282EA45C006B79BE /* GoogleService-Info.plist */,
+				4424CDF5282EC02F006B79BE /* GoogleService-Info.plist */,
 			);
 			path = TempMonitor;
+			sourceTree = "<group>";
+		};
+		B8E73D27AEFBAB7B3C4EC85D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				518426FDCB55CF3781E6A2E0 /* Pods_TempMonitor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44E617522814931900FEE365 /* Build configuration list for PBXNativeTarget "TempMonitor" */;
 			buildPhases = (
+				50E5E9A564B6B07E7B69FB80 /* [CP] Check Pods Manifest.lock */,
 				44E6173A2814931800FEE365 /* Sources */,
 				44E6173B2814931800FEE365 /* Frameworks */,
 				44E6173C2814931800FEE365 /* Resources */,
+				A1010AE52C2C0C3F7B78A3B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,14 +131,6 @@
 			);
 			name = TempMonitor;
 			packageProductDependencies = (
-				4424CDDF282EA8D0006B79BE /* FirebaseAnalytics */,
-				4424CDE1282EA8D0006B79BE /* FirebaseAuth */,
-				4424CDE3282EA8D0006B79BE /* FirebaseDatabase */,
-				4424CDE5282EA8D0006B79BE /* FirebaseDatabaseSwift */,
-				4424CDE7282EA8D0006B79BE /* FirebaseFirestore */,
-				4424CDE9282EA8D0006B79BE /* FirebaseFirestoreSwift */,
-				4424CDEB282EA8D0006B79BE /* FirebaseFunctions */,
-				4424CDED282EA8D0006B79BE /* FirebaseStorage */,
 			);
 			productName = TempMonitor;
 			productReference = 44E6173E2814931800FEE365 /* TempMonitor.app */;
@@ -159,7 +161,6 @@
 			);
 			mainGroup = 44E617352814931800FEE365;
 			packageReferences = (
-				4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 44E6173F2814931800FEE365 /* Products */;
 			projectDirPath = "";
@@ -176,13 +177,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				44E6174E2814931900FEE365 /* LaunchScreen.storyboard in Resources */,
-				4424CDDD282EA45C006B79BE /* GoogleService-Info.plist in Resources */,
+				4424CDF6282EC02F006B79BE /* GoogleService-Info.plist in Resources */,
 				44E6174B2814931900FEE365 /* Assets.xcassets in Resources */,
 				44E617492814931800FEE365 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50E5E9A564B6B07E7B69FB80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempMonitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1010AE52C2C0C3F7B78A3B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempMonitor/Pods-TempMonitor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempMonitor/Pods-TempMonitor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TempMonitor/Pods-TempMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44E6173A2814931800FEE365 /* Sources */ = {
@@ -341,6 +384,7 @@
 		};
 		44E617532814931900FEE365 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75EBB59F3C7EAC5DF4F1951E /* Pods-TempMonitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -352,6 +396,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -370,6 +415,7 @@
 		};
 		44E617542814931900FEE365 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95C2BE1FE2AD277A69F0CE60 /* Pods-TempMonitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,6 +427,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -419,60 +466,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4424CDDF282EA8D0006B79BE /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		4424CDE1282EA8D0006B79BE /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		4424CDE3282EA8D0006B79BE /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		4424CDE5282EA8D0006B79BE /* FirebaseDatabaseSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabaseSwift;
-		};
-		4424CDE7282EA8D0006B79BE /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		4424CDE9282EA8D0006B79BE /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
-		};
-		4424CDEB282EA8D0006B79BE /* FirebaseFunctions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFunctions;
-		};
-		4424CDED282EA8D0006B79BE /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4424CDDE282EA8D0006B79BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 44E617362814931800FEE365 /* Project object */;
 }
